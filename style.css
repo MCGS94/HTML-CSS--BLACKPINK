@@ -1,0 +1,381 @@
+
+/* Import google font ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+/* Base setup -------------------------------*/
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    background: #000000;;
+    color:#e3a6ad;
+    line-height: 1.2;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:#e3a6ad;
+    text-decoration: none;
+}
+
+h1,h2{
+    font-weight: 500;
+}
+
+p{
+    margin:  5px;
+}
+
+img{
+    width: 100%
+}
+
+section{
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+
+
+/* Utilities ( classes that can be used again) ------------------- */
+
+.section-title {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+    color: #e3a6ad;
+    margin-bottom: 50px;
+}
+
+.profile-bio {
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Navbar ------------------------------------------------ */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color:#e3a6ad;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index:25 !important ;
+
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    color:#e3a6ad;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.navbar ul li:last-child a {
+    margin-right: 105px;
+}
+
+.navbar a:hover {
+    border-bottom:  2px solid;
+}
+
+.navbar .logo {
+    margin-left: 30px;
+    height: 70px;
+    width: 200px;
+}
+
+
+/* Header --------------------------------------------------------*/
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -40px;
+    position: absolute;
+    filter: brightness(50%);
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.text-album {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 70px 35px;
+    color: white;
+    border: white solid  5px;
+    left: 10%;
+}
+
+
+
+/* Members ------------------------------------------------------------*/
+
+
+#members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000;
+    height: 100vh;
+}
+
+.members-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-section{
+    position:relative;
+    height:60%;
+    overflow:hidden;
+    color:white;
+    font-family:sans-serif;
+  }
+  
+  .member-pic{
+    height: 100%;
+    width: auto;
+    filter: grayscale(100%);
+    overflow:hidden;
+  }
+  
+  /* Animation to slide up*/
+
+  .member-name{
+    position:absolute;
+    bottom: -101%;
+    width: 100%;
+    transition: bottom 0.3s, top 0.3s;
+    vertical-align: bottom;
+  }
+
+.member-name p{
+     font-family: 'Lobster', cursive;
+      font-size: 45px;
+      color: #000000;
+      text-shadow: rgb(227, 166, 173) 4px 0px 0px, rgb(227, 166, 173) 3.87565px 0.989616px 0px, rgb(227, 166, 173) 3.51033px 1.9177px 0px, rgb(227, 166, 173) 2.92676px 2.72656px 0px, rgb(227, 166, 173) 2.16121px 3.36588px 0px, rgb(227, 166, 173) 1.26129px 3.79594px 0px, rgb(227, 166, 173) 0.282949px 3.98998px 0px, rgb(227, 166, 173) -0.712984px 3.93594px 0px, rgb(227, 166, 173) -1.66459px 3.63719px 0px, rgb(227, 166, 173) -2.51269px 3.11229px 0px, rgb(227, 166, 173) -3.20457px 2.39389px 0px, rgb(227, 166, 173) -3.69721px 1.52664px 0px, rgb(227, 166, 173) -3.95997px 0.56448px 0px, rgb(227, 166, 173) -3.97652px -0.432781px 0px, rgb(227, 166, 173) -3.74583px -1.40313px 0px, rgb(227, 166, 173) -3.28224px -2.28625px 0px, rgb(227, 166, 173) -2.61457px -3.02721px 0px, rgb(227, 166, 173) -1.78435px -3.57996px 0px, rgb(227, 166, 173) -0.843183px -3.91012px 0px, rgb(227, 166, 173) 0.150409px -3.99717px 0px, rgb(227, 166, 173) 1.13465px -3.8357px 0px, rgb(227, 166, 173) 2.04834px -3.43574px 0px, rgb(227, 166, 173) 2.83468px -2.82216px 0px, rgb(227, 166, 173) 3.44477px -2.03312px 0px, rgb(227, 166, 173) 3.84068px -1.11766px 0px, rgb(227, 166, 173) 3.9978px -0.132717px 0px;
+      margin:0;
+      padding: 10px;
+}
+
+.member-section:hover .member-name{
+        bottom: 0;        
+}
+
+.member-section:hover .member-pic{
+    filter: grayscale(0%);     
+}
+
+/* Profiles ---------------------------------------------------------------*/
+
+#profiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.profile-member{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-description{
+    position: relative;
+    background-color: #e3a6ad;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 40px;
+    text-align: left;
+}
+
+.profile-pic {
+    height: 500px;
+    width: 100%;
+    z-index: 10;
+}
+
+.profiles-members li:first-child {
+
+    flex-direction: row-reverse;
+}
+
+.profiles-members li:nth-child(3){
+
+    flex-direction: row-reverse;
+}
+
+/* Footer ---------------------------------------------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+
+.footer a{
+    margin: 10px;
+}
+
+
+.footer a:hover{
+    color: #ffffff;
+}
+
+.footer h3 {
+    color:#ffffff;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+/* =================================== Media Queries ====================================== */
+
+
+@media (max-width: 812px){
+
+
+    /* Header */
+
+
+    .navbar{
+        flex-direction: column;
+        height: 150px;
+        padding: 20px;
+    }
+
+    .navbar ul li:last-child a {
+        margin-right: 0px;
+    }
+
+    .navbar a {
+        padding: 50px 10px;
+    }
+
+    .hero{
+
+        background: url('./media/bg-phone.jpg') no-repeat center center/cover;
+        height: 100vh;
+        width: 100%;
+        z-index: 24;
+        
+    }
+
+    video{
+        display: none;
+    }
+
+    .content{
+        display: none;
+    }
+
+/* ------------------------------------------------------------------------------------ */
+
+
+    /* Members */
+
+
+    #members{
+        height: auto;
+    }
+
+    .members-section{
+        flex-direction: column;
+    }
+
+    .member-section{
+        position: static;
+      }
+
+    .member-pic{
+        overflow:auto;
+        height: auto;
+
+    }
+
+    .member-name{
+        position: static;
+        margin-bottom: 30px;
+      }
+
+    .member-name p {
+        font-size: 65px;
+    }
+
+
+/* ------------------------------------------------------------------------------------ */
+
+    /* Profiles */
+
+    .profile-member{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profiles-members li:first-child {
+
+        flex-direction: column;
+    }
+    
+    .profiles-members li:nth-child(3){
+    
+        flex-direction: column;
+    }
+
+    .profile-pic{
+        height: 400px;
+        max-width: 360px;
+    }
+
+   /* ------------------------------------------------------------------------------------ */
+}
